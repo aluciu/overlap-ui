@@ -1,0 +1,47 @@
+.wrap-content {
+	max-width: 1120px;
+	padding: 0 1em;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.index-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		width: 33.33%;
+		float: left;
+		padding: 0 10px;
+		margin-bottom: 2em;
+
+		&:nth-child(3n+1) {
+			clear: left;
+		}
+
+		@include breakpoint(small down) {
+			width: 50%;
+			&:nth-child(3n+1) {
+				clear: none;
+			}
+			&:nth-child(odd) {
+				clear: left;
+			}
+		}
+	}
+}
+
+// Header
+.info-header {
+	border-bottom: 2px solid #000;
+	margin-bottom: 4em;
+	padding: 1em 0 1em;
+
+
+	h1 {
+		font-size: 1.88em;
+		margin-bottom: 0.4em;
+		font-weight: 700;
+		font-family: $font-serif;
+	}
+}

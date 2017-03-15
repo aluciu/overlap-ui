@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Overlap UI Kit // A. Luciu</title>
+
+<!-- Stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:700" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="header-site header-blog">
+  <div class="header-title">
+    <a href="index.html">Overlap</a>
+  </div>
+
+  <nav class="site-nav">
+    <ul class="menu">
+      <li><a href="#">Classic</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="blog-list.html">Blog</a></li>
+      <li><a href="shop-list.html">Shop</a></li>
+      <li><a data-open="contactModal">Contact</a></li>
+      <li class="menu-search">
+        <div class="site-search">
+        	<div class="header-search">
+        		<input type="text" placeholder="What are you looking for" class="input-search" />
+        		<button class="btn-search button small" type="submit">
+		          <span aria-hidden="true">
+		          	<svg class="svg-icn">
+				        	<use xlink:href="img/icons.svg#search"/>
+				      	</svg>
+		          </span>
+        		</button>
+        	</div>
+
+          <a href="#" class="button small search-toggle">
+	          <span class="show-for-sr">Search</span>
+	          <span aria-hidden="true">
+	          	<svg class="svg-icn">
+			        	<use xlink:href="img/icons.svg#search"/>
+			      	</svg>
+	          </span>
+          </a>
+        </div>
+      </li>
+    </ul>
+
+    <button class="menu-toggle">
+      <span class="menu-label">Menu</span>
+      <span aria-hidden="true">
+      	<svg class="svg-icn">
+        	<use xlink:href="img/icons.svg#menu"/>
+      	</svg>
+      </span>
+    </button>
+  </nav>
+
+</header>
+
+<div class="blog-container">
+  <div class="row">
+  	<div class="medium-4 columns">
+
+  		<div class="widget widget-post">
+  			<div class="thumb">
+  				<img src="img/widget_img2.png" alt="" />
+  				<p class="caption">The Wild Wild West</p>
+  			</div>
+  			<h3>What a story! Everything but the bloodhounds snappin' </h3>
+  			<p>Well now, what's it to be, Lord? Another widow? How many has it been? Six? Twelve? I disremember. </p>
+  			<a href="blog-single.html" class="link-more">Continue reading</a>
+  		</div><!-- .widget-post -->
+
+  		<div class="widget widget-archive">
+  			<h3>Archive</h3>
+  			<ul class="no-bullet">
+  				<li><a href="#">Classic (323)</a></li>
+  				<li><a href="#">Movie (323)</a></li>
+  				<li><a href="#">Retro (323)</a></li>
+  				<li><a href="#">Black (323)</a></li>
+  				<li><a href="#">White (323)</a></li>
+  				<li><a href="#">Freebies (323)</a></li>
+  				<li><a href="#">Graphic Burger (323)</a></li>
+  				<li><a href="#">Famous (323)</a></li>
+  				<li><a href="#">Shop (56)</a></li>
+  				<li><a href="#">Quotes (56)</a></li>
+  				<li><a href="#">Greatest Film (56)</a></li>
+  			</ul>
+  		</div><!-- .widget-archive -->
+
+  		<div class="widget widget-latest">
+  			<h3>LATEST BLOG POSTS</h3>
+  			<ul class="no-bullet">
+  				<li class="post-small clearfix">
+  					<a href="blog-single.html" class="post-thumb"><img src="img/post-thumb1.png" alt=""></a>
+  					<div class="post-details">
+  						<h4><a href="blog-single.html">Bond. James Bond.</a></h4>
+  						<p class="meta">17 hrs ago  -  18 min read</p>
+  					</div>
+  				</li>
+  				<li class="post-small clearfix">
+  					<a href="blog-single.html" class="post-thumb"><img src="img/post-thumb2.png" alt=""></a>
+  					<div class="post-details">
+  						<h4><a href="blog-single.html">Carpe diem. Seize the day, boys. Make your mind right now baby!</a></h4>
+  						<p class="meta">2 days ago  -  5 min read</p>
+  					</div>
+  				</li>
+  				<li class="post-small clearfix">
+  					<a href="blog-single.html" class="post-thumb"><img src="img/post-thumb3.png" alt=""></a>
+  					<div class="post-details">
+  						<h4><a href="blog-single.html">Daddy! My Daddy!</a></h4>
+  						<p class="meta">3 days ago  -  13 min read</p>
+  					</div>
+  				</li>
+  				<li class="post-small clearfix">
+  					<a href="blog-single.html" class="post-thumb"><img src="img/post-thumb4.png" alt=""></a>
+  					<div class="post-details">
+  						<h4><a href="blog-single.html">Do I look like I give a damn?</a></h4>
+  						<p class="meta">3 days ago  -  24 min read</p>
+  					</div>
+  				</li>
+  			</ul>
+  		</div><!-- .widget-latest -->
+
+      <div class="widget widget-buy">
+        <div class="thumb">
+          <img src="img/widget_img.png" alt="" />
+  				<p class="caption">I swear, if you existed, I’d divorce you.</p>
+        </div>
+        <p>One day the war will be over. And I hope that the people that use this bridge in years to come will remember how it was built and who built it. </p>
+        <a href="blog-single.html" class="link-more">Continue reading</a>
+        <div class="cta">
+          <a href="#" class="button expanded">Buy Ticket</a>
+        </div>
+      </div>
+
+  	</div>
+  	<div class="medium-8 columns">
+
+  		<div class="list-post" style="background-image: url(img/bg_blog1.jpg);">
+  			<div class="overlay">
+  				<h2 class="title">Get busy living, or get busy dying.</h2>
+  				<p class="excerpt">He lives for a sigh, he dies for a kiss, he lusts for the laugh, ha! He never walks when he can leap! He never flees when he can fight! He swoons at the beauty of a rose.</p>
+  				<a href="blog-single.html" class="button">Read</a>
+  			</div>
+  		</div><!-- .list-post -->
+
+  		<div class="list-post darken" style="background-image: url(img/bg_blog2.jpg);">
+  			<div class="overlay">
+  				<h2 class="title">Deerat dextra distinxit habentia ora sine</h2>
+  				<p class="excerpt">Carentem induit motura arce caeca. Deerat dextra distinxit habentia ora sine. Mortales parte! Diu quanto nebulas. Nuper sive modo.</p>
+  				<a href="blog-single.html" class="button">Read</a>
+  			</div>
+  		</div><!-- .list-post -->
+
+  		<div class="list-post no-cover">
+  			<div class="overlay">
+  				<h2 class="title">Aethera nullaque habentia quarum retinebat.</h2>
+  				<p class="excerpt">Discordia os verba secrevit abscidit montibus freta? Vesper fulgura securae illas onerosior dixere verba. Lucis obsistitur et aere surgere pace.</p>
+  				<a href="/blog-single.html" class="button">Read</a>
+  			</div>
+  		</div><!-- .list-post -->
+
+      <div class="widget widget-reviews">
+        <h3>No Review</h3>
+        <p class="subtitle">Be the first to review this product</p>
+
+        <div class="star-rating">
+          <fieldset>
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="Outstanding">
+              <span class="show-for-sr">5 stars</span>
+  	          <span aria-hidden="true">
+  	          	<svg class="svg-icn">
+  			        	<use xlink:href="img/icons.svg#star"/>
+  			      	</svg>
+  	          </span>
+            </label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="Very Good">
+              <span class="show-for-sr">4 stars</span>
+  	          <span aria-hidden="true">
+  	          	<svg class="svg-icn">
+  			        	<use xlink:href="img/icons.svg#star"/>
+  			      	</svg>
+  	          </span>
+            </label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="Good">
+              <span class="show-for-sr">3 stars</span>
+  	          <span aria-hidden="true">
+  	          	<svg class="svg-icn">
+  			        	<use xlink:href="img/icons.svg#star"/>
+  			      	</svg>
+  	          </span>
+            </label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="Poor">
+              <span class="show-for-sr">2 stars</span>
+  	          <span aria-hidden="true">
+  	          	<svg class="svg-icn">
+  			        	<use xlink:href="img/icons.svg#star"/>
+  			      	</svg>
+  	          </span>
+            </label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="Very Poor">
+              <span class="show-for-sr">1 stars</span>
+  	          <span aria-hidden="true">
+  	          	<svg class="svg-icn">
+  			        	<use xlink:href="img/icons.svg#star"/>
+  			      	</svg>
+  	          </span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-btns">
+          <button class="button">Add a review</button>
+        </div>
+      </div><!-- .widget-reviews -->
+
+  	</div>
+  </div>
+</div>
+
+
+<div class="footer-site">
+  <div class="row">
+    <div class="small-8 small-centered columns">
+    	<ul class="footer-menu">
+    		<li><a href="#">Facebook</a></li>
+    		<li><a href="#">Google Plus</a></li>
+    		<li><a href="#">Twitter</a></li>
+    		<li><a href="#">Dribble</a></li>
+    		<li><a href="#">Behance</a></li>
+    		<li><a href="#">Pinterest</a></li>
+    	</ul>
+    	<p class="copy">overlap kit &copy; 2016. All Rights Reserved</p>
+		</div>
+	</div>
+</div><!-- .footer-site -->
+
+<div class="reveal full" id="contactModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-body">
+    <h2 class="modal-title"><span>send us your thoughts</span></h2>
+    <div class="modal-inner">
+      <h3>Contact us</h3>
+      <p class="subtitle">We'd love to hear from you</p>
+      <div class="contact-form">
+        <form>
+          <div class="float-label">
+            <input type="text" id="name" class="float-input">
+            <label for="name">Name</label>
+          </div>
+          <div class="float-label">
+            <input type="email" id="email" class="float-input">
+            <label for="email">Email</label>
+          </div>
+          <textarea rows="4" id="comment" placeholder="Add Comment:"></textarea>
+
+          <div class="form-btns">
+            <button class="button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <a href="#" class="modal-close" data-close aria-label="Close modal">
+      Close/<span>&times;</span>
+    </a>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

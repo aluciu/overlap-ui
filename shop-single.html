@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Overlap UI Kit // A. Luciu</title>
+
+<!-- Stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body class="shop-page">
+<header class="header-site header-blog">
+  <div class="header-title">
+    <a href="index.html">Overlap</a>
+  </div>
+  <nav class="site-nav">
+    <ul class="menu">
+      <li><a href="shop-list.html">Shop</a></li>
+      <li><a href="blog-list.html">Blog</a></li>
+      <li><a href="shop-checkout.html">Cart (0)</a></li>
+      <li><a data-open="loginModal">Login</a></li>
+    </ul>
+    <button class="menu-toggle">
+      <span class="menu-label">Menu</span>
+      <span aria-hidden="true">
+      	<svg class="svg-icn">
+        	<use xlink:href="img/icons.svg#menu"/>
+      	</svg>
+      </span>
+    </button>
+  </nav>
+</header>
+
+<div class="sub-header">
+  <ul class="breadcrumb">
+    <li><a href="#0">Classic</a></li>
+    <li><a href="#0">Musicals</a></li>
+    <li>Breakfast at Tiffany's</li>
+  </ul>
+</div>
+
+
+<div class="detail-product">
+  <div class="product-top">
+    <div class="slider">
+      <p class="subtitle"><span>Audrey Hepburn</span></p>
+      <div class="product-slider">
+        <div class="slide"><img src="img/product1.png" alt=""></div>
+        <div class="slide"><img src="http://placehold.it/400x500"></div>
+        <div class="slide"><img src="http://placehold.it/400x500/999"></div>
+      </div>
+      <button type="button" class="slide-next">
+        <span aria-hidden="true">
+          <svg class="svg-icn">
+            <use xlink:href="img/icons.svg#arrow-right"/>
+          </svg>
+        </span>
+      </button>
+      <p class="counter"></p>
+    </div>
+
+    <div class="product-details">
+    <h2 class="title">Breakfast at Tiffany's</h2>
+    <p class="price">$ 35</p>
+  </div>
+  </div>
+  <div class="product-info">
+    <ul class="tabs" data-tabs id="tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Details</a></li>
+      <li class="tabs-title"><a href="#panel2">Type</a></li>
+      <li class="tabs-title"><a href="#panel3">Shipping</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <p>Holly Golightly is a flighty Manhattan party girl, who expects "money for the powder room as well as for cab fare" for her companionship. She has even gotten a lucrative once weekly job to visit notorious convict Sally Tomato in Sing Sing, she needing to report back to Sally's</p>
+      </div>
+      <div class="tabs-panel" id="panel2">
+        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+      </div>
+      <div class="tabs-panel" id="panel3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur facere voluptate, omnis maiores quis nesciunt velit nobis aliquid sed voluptatem quam officia! Vel explicabo voluptatibus ut dolorem totam at iste.</p>
+      </div>
+    </div>
+  </div><!-- .product-info -->
+
+  <div class="product-actions">
+    <form>
+      <div class="row">
+        <div class="medium-4 columns">
+
+          <select>
+            <option value="">Type</option>
+            <option value="starbuck">Starbuck</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="apollo">Apollo</option>
+          </select>
+
+        </div>
+        <div class="medium-4 columns">
+
+          <select>
+            <option value="">Options</option>
+            <option value="starbuck">Starbuck</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="apollo">Apollo</option>
+          </select>
+
+        </div>
+        <div class="medium-4 columns">
+          <select>
+            <option value="">Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 columns">
+          <button class="button expanded" type="submit">Add to cart</button>
+        </div>
+      </div>
+    </form>
+  </div><!-- .product-actions -->
+</div>
+
+
+
+<div class="footer-site">
+  <div class="row">
+    <div class="small-8 small-centered columns">
+    	<ul class="footer-menu">
+    		<li><a href="#">Facebook</a></li>
+    		<li><a href="#">Google Plus</a></li>
+    		<li><a href="#">Twitter</a></li>
+    		<li><a href="#">Dribble</a></li>
+    		<li><a href="#">Behance</a></li>
+    		<li><a href="#">Pinterest</a></li>
+    	</ul>
+    	<p class="copy">overlap kit &copy; 2016. All Rights Reserved</p>
+		</div>
+	</div>
+</div><!-- .footer-site -->
+
+
+<div class="reveal full" id="loginModal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-body">
+    <h2 class="modal-title"><span>login</span></h2>
+    <div class="modal-inner">
+      <h3>enter</h3>
+      <p class="subtitle">You see, in this world there’s two kinds of people, my friend; those with loaded guns and those who dig.</p>
+      <div class="login-form">
+        <form autocomplete="off">
+          <div class="float-label">
+            <input type="text" id="name" class="float-input" autocomplete="off">
+            <label for="name">Name</label>
+          </div>
+          <div class="float-label">
+            <input type="password" id="password" class="float-input" autocomplete="new-password">
+            <label for="email">Password</label>
+          </div>
+          <div class="form-btns">
+            <button class="button">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <a href="#" class="modal-close" data-close aria-label="Close modal">
+      Close/<span>&times;</span>
+    </a>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

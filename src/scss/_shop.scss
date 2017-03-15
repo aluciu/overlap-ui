@@ -1,0 +1,391 @@
+.shop-page {
+  background-color: #fff;
+}
+
+.listing-products {
+  margin-top: 120px;
+}
+.pagination {
+  display: inline-block;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  margin: 0 10px;
+}
+.sorter {
+  display: inline-block;
+}
+
+.list-product {
+  position: relative;
+  margin-bottom: 90px;
+  @include clearfix;
+}
+.slider {
+  background-color: rgb(242, 242, 242);
+  box-shadow: 0px 40px 50px 0px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 490px;
+  position: relative;
+  margin: 0;
+  float: left;
+
+  @include breakpoint(medium down) {
+    height: 330px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .slide {
+    overflow: hidden;
+    height: 490px;
+
+    @include breakpoint(medium down) {
+      height: 330px;
+    }
+  }
+
+  .slide-next {
+    background-color: $primary-color;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    right: -25px;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .counter {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 4px;
+    transform: rotate(-90deg);
+    //transform-origin: 0 100%;
+  }
+
+  .subtitle {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+    top: 2em;
+    left: -1.5em;
+    height: 1em;
+    width: 1em;
+    line-height: 1em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.6em;
+    white-space: nowrap;
+
+    span {
+      float: right;
+    }
+  }
+
+  @include breakpoint(small down) {
+    float: none;
+    width: auto;
+    height: 300px;
+
+    .slide {
+      height: 300px;
+    }
+  }
+}
+
+
+.product-text {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  width: 50%;
+  z-index: 100;
+
+  .title {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    a {
+      color: #000;
+    }
+  }
+
+  .short-description {
+    @include breakpoint(medium down) {
+      display: none;
+    }
+  }
+
+  @include breakpoint(small down) {
+    position: static;
+    margin-top: 1em;
+    width: auto;
+  }
+}
+
+.list-product.alternate {
+  .slider {
+    float: right;
+  }
+  .product-text {
+    left: auto;
+    right: 45%;
+    text-align: right;
+  }
+
+  @include breakpoint(small down) {
+    .slider {
+      float: none;
+    }
+  }
+}
+
+.link-continue {
+  background: #e6e6e6;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+  color: #b3b3b3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8em;
+  font-weight: 600;
+}
+
+.detail-product {
+
+  @include clearfix;
+
+  .slider {
+    max-width: 700px;
+    height: 700px;
+
+    .slide {
+      height: 700px;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    padding: 0 3em;
+
+    .slider {
+      height: 400px;
+      .slide {
+        height: 400px;
+      }
+    }
+
+    .product-top {
+      @include clearfix;
+    }
+  }
+
+  @include breakpoint(small down) {
+    .slider {
+      height: 260px;
+      .slide {
+        height: 260px;
+      }
+    }
+  }
+}
+
+.product-details {
+  position: relative;
+  z-index: 10;
+  max-width: 700px;
+  width: 40%;
+  float: left;
+  margin-top: 200px;
+  margin-left: -30px;
+
+  .price {
+    color: black;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(small down) {
+    max-width: none;
+    width: auto;
+    float: none;
+    margin: 3em 0 0;
+  }
+}
+
+.product-info {
+  position: relative;
+  z-index: 10;
+  float: left;
+  max-width: 700px;
+  width: 40%;
+  margin-left: -30px;
+
+  .tabs-title {
+    margin-right: 1.4em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 6px;
+
+    a {
+      color: #b3b3b3;
+    }
+
+    &.is-active a {
+      color: #333;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    clear: left;
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-top: 3em;
+  }
+}
+
+.product-actions {
+  float: left;
+
+  width: 450px;
+  margin: 2em 20px 0;
+
+  @include breakpoint(medium down) {
+    float: none;
+    margin: 2em auto;
+  }
+
+  @include breakpoint(small down) {
+    width: auto;
+  }
+}
+
+.shop-checkout {
+  margin: 60px 0;
+}
+
+.checkout-list {
+  .item {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+
+    .price {
+      margin-top: 56px;
+      text-align: right;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: #000;
+      span {
+        font-size: 14px;
+        font-weight: 900;
+        display: inline-block;
+        width: 50px;
+      }
+    }
+  }
+  .thumb {
+    float: left;
+    width: 170px;
+  }
+  .pusher {
+    margin-left: 185px;
+  }
+  .item-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+  .item-options {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #000;
+    strong{
+      font-size: 14px;
+      font-weight: 900;
+    }
+  }
+  .item-actions {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    letter-spacing: 4px;
+    a {
+      color: #b3b3b3;
+      &:hover {
+        text-decoration: underline;
+        color: #000;
+      }
+    }
+  }
+
+  @include breakpoint(small down) {
+    .thumb {
+      float: none;
+      width: 100px;
+    }
+
+    .pusher {
+      margin-left: 0;
+    }
+
+    .item .price {
+      float: right;
+      margin-top: 0px;
+    }
+  }
+}
+
+.checkout-total {
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 40px;
+
+  .total {
+    font-size: 20px;
+    padding-left: 185px;
+
+    @include breakpoint(small down) {
+      padding-left: 0;
+    }
+  }
+}
+
+.checkout-actions {
+  .button {
+    margin-left: 2em;
+  }
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+
+  @include breakpoint(small down) {
+    width: auto;
+  }
+
+}

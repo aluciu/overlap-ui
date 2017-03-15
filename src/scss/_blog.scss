@@ -1,0 +1,166 @@
+.blog-content {
+	margin-bottom: 2em;
+}
+
+.blog-container {
+	margin-top: 3em;
+}
+
+.blog-share {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3em;
+    text-transform: uppercase;
+    font-size: rem-calc(10);
+    font-weight: 700;
+    letter-spacing: 0.4em;
+  }
+
+
+  li {
+    display: inline-block;
+    margin-right: 0.8em;
+  }
+
+  strong {
+    font-weight: 900;
+    color: #000;
+  }
+}
+.comments-add {
+	margin-bottom: 2em;
+}
+.comments-list {
+  ol {
+    list-style: none;
+    margin: 3em 0 0;
+    padding: 0;
+
+    ol {
+      margin-left: 2em;
+    }
+  }
+
+  li {
+		margin-bottom: 3em;
+  }
+  .author {
+  	font-weight: 900;
+  	color: black;
+  	text-transform: uppercase;
+  	font-size: rem-calc(14);
+  	margin-bottom: 0.6em;
+  }
+  .comment {
+  	font-size: rem-calc(14);
+  	color: #666;
+  	margin-bottom: 0.6em;
+  }
+  .time {
+  	font-size: rem-calc(10);
+  	color: #999;
+  }
+  .avatar {
+    float: left;
+  }
+  .inner {
+    margin-left: 100px;
+  }
+
+	@include breakpoint(small down) {
+		.avatar {
+			width: 50px;
+		}
+		.inner {
+			margin-left: 65px;
+		}
+	}
+}
+
+.header-article {
+	padding: 3.75em 0;
+	background: $color-bg;
+	color: #fff;
+	margin-bottom: 3.75em;
+
+	.author {
+		margin-bottom: 3em;
+		font-size: 14px;
+		font-weight: 900;
+		text-transform: uppercase;
+
+		img {
+			width: 50px;
+			margin-right: 1em;
+		}
+	}
+
+	.time {
+		font-size: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+	}
+}
+
+.title-article {
+	font-family: $font-serif;
+	color: #fff;
+	font-size: rem-calc(40);
+	margin: 0;
+}
+
+
+.list-post {
+	background: #cacaca no-repeat top center;
+	background-size: cover;
+	height: 525px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+
+	.overlay {
+		position: absolute;
+		width: 70%;
+		max-width: 550px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		padding-right: 120px;
+
+		@include breakpoint(medium down) {
+			width: 80%;
+		}
+		@include breakpoint(small down) {
+			padding-right: 0;
+		}
+	}
+
+	.title {
+		font-family: $font-serif;
+	}
+	.excerpt {
+		color: #000;
+	}
+
+	&.darken {
+		color: #fff;
+
+		.title {
+			color: #fff;
+		}
+		.excerpt {
+			color: #fff;
+		}
+		.button {
+			color: #fff;
+		}
+	}
+
+	&.no-cover {
+		.overlay {
+			padding-right: 0;
+		}
+	}
+}

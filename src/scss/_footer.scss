@@ -1,0 +1,59 @@
+.footer-subscribe {
+	background-color: #e6e6e6;
+	text-align: center;
+	padding: 4em 0 0;
+
+	h3 {
+		font-size: 20px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin-bottom: 1.4em;
+	}
+	p {
+		color: black;
+
+	}
+}
+.subscribe-form {
+	margin: 3em 6em -2em;
+
+	@include breakpoint(small down) {
+		margin: 3em 0 -2em;
+	}
+}
+.footer-site {
+	background-color: $color-bg;
+	color: #000;
+	text-align: center;
+	padding: 4em 0;
+
+	.footer-menu {
+		color: white;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 2em;
+		list-style: none;
+
+		li {
+			@include breakpoint(medium) {
+				display: inline-block;
+				margin: 0 1em;
+			}
+		}
+
+		a {
+			color: white;
+		}
+	}
+
+	.copy {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+@include motion-ui-transitions;

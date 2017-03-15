@@ -1,0 +1,48 @@
+@import 'node_modules/foundation-sites/scss/util/util';
+
+$body-background: #f5f5f5;
+$body-font-color: #666666;
+$body-font-family: 'Lato', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+$global-width: 1000px;
+
+$foundation-palette: (
+  primary: #c6f327,
+  secondary: #777,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+);
+
+$header-font-weight: bold;
+$header-color: #000;
+
+$anchor-color: $body-font-color;
+$anchor-color-hover: #d9303b;
+
+$form-label-color: $body-font-color;
+$input-font-size: rem-calc(14px);
+$input-color: #333;
+$input-background: #fff;
+$input-background-focus: #fff;
+$input-border: 1px solid #f2f2f2;
+$input-border-focus: 1px solid #fff;
+$input-shadow: none;
+$input-shadow-focus: 0 10px 10px rgba(0, 0, 0, 0.05);
+
+$button-background: rgba(map-get($foundation-palette, primary),0);
+$button-background-hover: rgba(map-get($foundation-palette, primary),.4);
+$button-color: #000;
+
+$breadcrumbs-item-font-size: 16px;
+$breadcrumbs-item-color: #000;
+
+$tab-background: transparent;
+$tab-background-active: transparent;
+$tab-item-background-hover: transparent;
+$tab-item-padding: 1em 0;
+$tab-content-background: transparent;
+$tab-content-border: transparent;
+$tab-content-padding: 0;
+
+$reveal-background: #2e5aef;

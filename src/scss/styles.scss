@@ -1,0 +1,103 @@
+@import "settings";
+@import "foundation";
+@import "motion-ui";
+
+@import "tools";
+
+$font-serif: 'Playfair Display', serif;
+$color-bg: #2e5aef;
+
+
+@import "common";
+@import "header";
+@import "footer";
+@import "blog";
+@import "widgets";
+@import "hero";
+@import "shop";
+
+
+
+// Buttons
+.button,
+button {
+  border: 5px solid $primary-color;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.float-label {
+  position: relative;
+
+  label {
+		color: grey;
+		font-size: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+
+	  position: absolute;
+	  top: 18px;
+	  left: 10px;
+	  transform: translateY(-50%);
+	  pointer-events: none;
+	  transition: all 0.15s ease-out 0s;
+	}
+
+  .float-input:focus + label,
+  .float-input.has-value + label {
+    top: -2px;
+    color: #333;
+  }
+}
+
+
+
+
+
+
+// Icons
+.svg-icn {
+  /* Flow with text content */
+  display: inline-block;
+  /* Inherit the parent text color */
+  fill: currentColor;
+  /* Use the parent font-size for width and height */
+  height: 1em;
+  width: 1em;
+  /* Vertically align icon with adjacent text */
+  vertical-align: middle;
+  /* Align more nicely with capital letters */
+  position: relative;
+  top: -0.0625em;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: rem-calc(10);
+  white-space: nowrap;
+}
+
+.section-sidetitle {
+  position: relative;
+
+  .section-title {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+    left: 2.5em;
+    height: 1em;
+    width: 1em;
+    line-height: 1em;
+    margin: 0;
+    letter-spacing: 0.8em;
+
+    span {
+      float: right;
+    }
+  }
+
+  @include breakpoint(small down) {
+    padding-left: 3em;
+	}
+}
