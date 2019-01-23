@@ -2,9 +2,10 @@
   "version": "1.0.1",
   "author": "aluciu",
   "dependencies": {
+    "event-stream": "^3.3.4",
+    "foundation-sites": "^6.3.1",
     "jquery": ">=3.0.0",
-    "motion-ui": "^1.2.2",
-    "foundation-sites": "^6.3.1"
+    "motion-ui": "^1.2.2"
   },
   "devDependencies": {
     "browser-sync": "^2.14.0",
