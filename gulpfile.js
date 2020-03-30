@@ -81,7 +81,7 @@ gulp.task('icons', function () {
 });
 
 // Run tasks without watching.
-gulp.task('build', ['sass', 'js', 'imagemin', 'icons']);
+gulp.task('build',  gulp.series('sass', 'js', 'imagemin', 'icons'));
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
@@ -91,10 +91,10 @@ gulp.task('watch', function() {
         baseDir: "./"
     }
   });
-  gulp.watch(sassSrc, ['sass', reload]);
-  gulp.watch(jsSrc, ['js', reload]);
-  gulp.watch(imgSrc, ['imagemin', reload]);
-  gulp.watch(svgSrc, ['icons', reload]);
+  gulp.watch(sassSrc, gulp.series('sass', reload));
+  gulp.watch(jsSrc, gulp.series('js', reload));
+  gulp.watch(imgSrc, gulp.series('imagemin', reload));
+  gulp.watch(svgSrc, gulp.series('icons', reload));
 });
 
-gulp.task('default', ['sass', 'js', 'imagemin', 'icons', 'watch']);
+gulp.task('default', gulp.series('sass', 'js', 'imagemin', 'icons', 'watch'));
